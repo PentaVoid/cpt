@@ -13,52 +13,51 @@ while True:
     user_choice = input("Enter " + "\u001b[1m" + "R " + "\u001b[0m" + "for rock, " + "\u001b[1m" + "P " + "\u001b[0m" + "for paper, and " "\u001b[1m" + "S " + "\u001b[0m" + "for scissors.\nIf you would like to quit, type " + "\u001b[1m" + "exit: ")
     print("\u001b[0m")
   
-    computerChoice = random.choice(choices)
-    if computerChoice[15].lower() == user_choice.lower():
-        print(computerChoice)
+    computer_choice = random.choice(choices)
+    if computer_choice[15].lower() == user_choice.lower():
+        print(computer_choice)
         time.sleep(0.5)
         print("Tie!\n")
         ties += 1
     elif user_choice.lower() == "r":
-        if computerChoice[15].lower() != "p":
-            print(computerChoice)
+        if computer_choice[15].lower() != "p":
+            print(computer_choice)
             time.sleep(0.5)
             print("You Win!\n")
             wins +=1
   
         else:
-            print(computerChoice)
+            print(computer_choice)
             time.sleep(0.5)
             print("You lose!\n")
             losses += 1
     elif user_choice.lower() == "p":
-        if computerChoice[15].lower() != "s":
-            print(computerChoice)
+        if computer_choice[15].lower() != "s":
+            print(computer_choice)
             time.sleep(0.5)
             print("You win!\n")
             losses += 1
   
         else:
-            print(computerChoice)
+            print(computer_choice)
             time.sleep(0.5)
             print("You lose!\n")
             wins += 1
   
     elif user_choice.lower() == "s":
-        if computerChoice[15].lower() != "r":
-            print(computerChoice)
+        if computer_choice[15].lower() != "r":
+            print(computer_choice)
             time.sleep(0.5)
             print("You win!\n")
             wins += 1
   
         else:
-            print(computerChoice)
+            print(computer_choice)
             time.sleep(0.5)
             print("You lose!\n")
             losses += 1
   
     elif user_choice.lower() == "exit".lower():
-      
             print("\nThanks for playing\n")
             time.sleep(1)
             print("Game Stats loading")
@@ -75,3 +74,4 @@ while True:
             print("Draws:", ties)
             time.sleep(2)
             break
+
