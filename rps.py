@@ -5,9 +5,7 @@ def rps():
     wins = 0
     losses = 0
     ties = 0
-    end = 0
 
-    print("WELCOME TO AYO'S ROCK PAPER SCISSORS!\n")
     time.sleep(2)
     while True:
         choices = ["Computer plays ROCK!","Computer plays PAPER!","Computer plays SCISSORS"]
